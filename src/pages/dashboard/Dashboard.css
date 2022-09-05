@@ -1,0 +1,6 @@
+.Dashboard {
+  width: 100%;
+  background-color: var(--secondary-bg-color);
+  height: 100vh;
+  overflow-y: scroll;
+}

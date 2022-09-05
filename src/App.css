@@ -1,0 +1,124 @@
+:root {
+  --main-color: #2d2d2d;
+  --secondary-color: #96a0b5;
+  --third-color: #ffffff;
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f7f9fc;
+  --third-bg-color: #2d2d2d;
+  --color-blue: #2081e2;
+  --bg-color-gray: #edeef5;
+  --box-shadow-color: #f5f5f5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.App {
+  display: flex;
+  color: var(--main-color);
+  height: auto;
+  position: relative;
+}
+
+.heading {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.32;
+}
+
+.subHeading--1 {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.subHeading--2 {
+  color: var(--secondary-color);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.subHeading--3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.heading--1 {
+  font-size: 38px;
+  margin-bottom: 1rem;
+}
+
+.heading--2 {
+  font-size: 24px;
+}
+
+.heading--3 {
+  font-size: 16px;
+}
+
+.paragraph {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.32;
+}
+
+.paragraph--1 {
+  font-size: 16px;
+}
+
+.paragraph--2 {
+  font-size: 14px;
+}
+
+.paragraph--3 {
+  font-size: 12px;
+}
+
+.gray-font {
+  color: var(--secondary-color);
+}
+
+#color-blue {
+  color: var(--color-blue);
+}
+
+.input::placeholder {
+  color: #9ca8ba;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input {
+  border: none;
+  background-color: transparent;
+  color: var(--main-color);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+@media only screen and (min-height: 1227px) {
+  .App {
+    min-height: 100vh;
+  }
+}

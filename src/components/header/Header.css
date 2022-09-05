@@ -1,0 +1,118 @@
+.Header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-bg-color);
+  margin: 15px;
+  border-radius: 100px;
+  box-shadow: var(--box-shadow-color) 0px 6px 24px 0px;
+}
+
+.Header .input-container {
+  background-color: var(--main-bg-color);
+  width: fit-content;
+  padding-inline: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  height: 50px;
+  min-width: 350px;
+}
+
+.Header .input-container svg {
+  stroke: var(--secondary-color);
+  margin-right: 10px;
+}
+
+.Header .input {
+  border: none;
+  color: #9ca8ba;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #9ca8ba;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.Header .right-content {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 33%;
+}
+
+.Header .left-content {
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 33%;
+}
+
+.Header .center-content {
+  display: flex;
+  justify-content: center;
+  flex-basis: 33%;
+}
+
+.Header .page-badge-container {
+  height: 50px;
+  padding-inline: 30px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--third-bg-color);
+}
+
+.Header .page-badge-container .heading {
+  color: var(--third-color);
+}
+
+.Header .menu-button-container {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color-gray);
+  cursor: pointer;
+  display: none;
+}
+
+.Header .menu-button-container svg {
+  height: 20px;
+  width: 20px;
+}
+
+.Header .news-button-container {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color-gray);
+  cursor: pointer;
+  display: none;
+}
+
+.Header .news-button-container svg {
+  height: 20px;
+  width: 20px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .Header .menu-button-container {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .Header .news-button-container {
+    display: flex;
+  }
+}

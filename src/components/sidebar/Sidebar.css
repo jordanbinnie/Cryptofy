@@ -1,0 +1,134 @@
+.Sidebar--fixed {
+  position: relative;
+  top: 0;
+  transition: all 500ms ease-in-out;
+  left: 0px;
+  z-index: 10000;
+  background-color: var(--main-bg-color);
+}
+
+.Sidebar {
+  min-width: 350px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(---main-bg-color);
+  transition: all 500ms ease-in-out;
+  left: 0px;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+.Sidebar_block {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px;
+  background-color: var(--main-bg-color);
+}
+
+.Sidebar_block.block--main {
+  padding-top: 0;
+}
+
+.Sidebar .block--item {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.Sidebar .block--item svg {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  fill: var(--secondary-color);
+}
+
+.Sidebar .active--floater {
+  position: absolute;
+  top: 120px;
+  width: 3px;
+  height: 41.11px;
+  background-color: var(--color-blue);
+  transition: all 500ms ease-in-out 0s;
+}
+
+.active-link,
+.active-link svg {
+  color: var(--color-blue);
+  fill: var(--color-blue) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.Sidebar-exit-icon {
+  display: none;
+}
+
+.coming-soon {
+  background-color: var(--color-blue);
+  border-radius: 100px;
+  color: var(--third-color);
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+#dollar-svg {
+  fill: none;
+  stroke: var(--color-blue);
+}
+#theme-svg {
+  fill: var(--color-blue);
+}
+
+@media only screen and (max-width: 1025px) {
+  .Sidebar {
+    position: absolute;
+    left: 0;
+    min-height: 100vh;
+    overflow: hidden;
+    top: 0;
+    background-color: var(--main-bg-color);
+  }
+  .Sidebar--fixed {
+    left: -350px;
+  }
+  .Sidebar_block {
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+  .Sidebar_block.block--header {
+    padding-top: 30px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Sidebar .block--item {
+    padding: 15px 0px;
+  }
+  .Sidebar--fixed {
+    position: fixed;
+  }
+  .Sidebar-exit-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: var(--bg-color-gray);
+    border-radius: 100px;
+    cursor: pointer;
+  }
+  .Sidebar-exit-icon svg {
+    height: 20px;
+    width: 20px;
+  }
+  .Sidebar .active--floater {
+    top: 107.5px;
+    height: 31.11px;
+  }
+}

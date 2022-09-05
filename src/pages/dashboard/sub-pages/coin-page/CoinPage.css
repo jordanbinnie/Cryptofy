@@ -1,0 +1,136 @@
+.CoinPage {
+  height: 100%;
+  position: relative;
+}
+
+.CoinPage-content {
+  margin: 15px;
+  display: flex;
+}
+
+.CoinPage-content .left-content {
+  flex: 1;
+  background-color: var(--main-bg-color);
+  padding: 30px;
+  margin-right: 7.5px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.CoinPage-content .left-content .symbol {
+  padding: 10px 20px;
+  border-radius: 100px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.CoinPage-content .top-content {
+  display: flex;
+  flex-direction: row;
+  width: 66.66%;
+}
+
+.CoinPage-content .right-content {
+  flex: 1;
+  background-color: var(--main-bg-color);
+  margin-left: 7.5px;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.CoinPage-content .center-content {
+  flex: 1;
+  background-color: var(--main-bg-color);
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.CoinPage-content .center-content .current-price {
+  background-color: var(--bg-color-gray);
+  padding: 10px 20px;
+  border-radius: 100px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.CoinPage-content .right-content svg {
+  width: 100px;
+  height: 100px;
+  fill: #2ecc71;
+}
+
+#falling {
+  fill: #e74c3c;
+}
+
+#rising {
+  fill: #2ecc71;
+}
+
+.CoinPage-content .right-content .price-change {
+  background-color: var(--bg-color-gray);
+  padding: 10px 20px;
+  border-radius: 100px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.CoinPage-content .right-content .hour24 {
+  padding: 10px 20px;
+  border-radius: 100px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.CoinPage-content img {
+  width: 80px;
+  height: 80px;
+  background-color: var(--bg-color-gray);
+  border-radius: 100px;
+  padding: 15px;
+}
+
+.CoinPage-content .left-content .top-content {
+  background-color: var(--third-bg-color);
+  color: var(--third-color);
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+@media only screen and (max-width: 780px) {
+  .CoinPage-content .top-content {
+    width: auto;
+  }
+  .CoinPage-content .center-content {
+    margin-right: 0;
+  }
+  .CoinPage-content .right-content {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .CoinPage-content {
+    flex-direction: column;
+  }
+  .CoinPage-content .left-content .symbol,
+  .CoinPage-content .right-content .hour24 {
+    padding: 5px 10px;
+  }
+}

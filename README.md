@@ -17,5 +17,3 @@ Discover current trending coins, top crypto gainers/losers, and 24 hour, 30 day,
 Setup:
 - clone this repository - see how https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 - run ```yarn start``` to start the development server
-
-testing*
